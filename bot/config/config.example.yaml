@@ -1,0 +1,59 @@
+# Базовые настройки бота
+bot:
+  name: "Discord Admin Bot"
+  description: "Многофункциональный бот для управления Discord серверами"
+  prefix: "!"  # Префикс для текстовых команд (legacy)
+  default_language: "ru"  # Язык по умолчанию
+  status: "online"  # online, idle, dnd, invisible
+  activity:
+    type: "watching"  # playing, watching, listening, competing
+    name: "за серверами"
+
+# Настройки баз данных (будут перезаписаны значениями из переменных окружения)
+database:
+  enabled: true
+  url: "postgresql://user:password@localhost:5432/botdb"
+
+# Настройки логирования
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  log_to_file: true
+  log_file: "logs/bot.log"
+
+# Настройки для вебхуков и сообщений
+embed:
+  colors:
+    primary: 0x7289DA  # Основной цвет (фирменный Discord)
+    success: 0x43B581  # Зеленый
+    warning: 0xFAA61A  # Желтый
+    error: 0xF04747    # Красный
+    info: 0x5865F2     # Синий
+
+# Модули бота
+modules:
+  admin:
+    enabled: true
+    description: "Административные команды для управления ботом"
+  moderation:
+    enabled: true
+    description: "Модерация сервера и участников"
+    auto_mod:
+      enabled: false
+      spam_threshold: 5
+      caps_threshold: 0.7
+  utility:
+    enabled: true
+    description: "Полезные утилиты и команды"
+  entertainment:
+    enabled: false
+    description: "Развлекательные команды"
+  music:
+    enabled: false
+    description: "Музыкальный плеер для голосовых каналов"
+  verification:
+    enabled: false
+    description: "Система верификации пользователей"
+  ai:
+    enabled: false
+    description: "Интеграция с AI для обработки запросов"

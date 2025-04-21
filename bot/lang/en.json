@@ -1,0 +1,422 @@
+{
+    "bot": {
+        "ready": "Bot is ready!",
+        "reconnect": "Reconnecting...",
+        "disconnect": "Bot disconnected",
+        "error": "An error occurred: {error}"
+    },
+    "commands": {
+        "common": {
+            "error": "An error occurred while executing the command!",
+            "not_found": "Command not found!",
+            "no_permission": "You don't have permission to use this command!",
+            "cooldown": "Please wait {time} seconds before using this command again.",
+            "guild_only": "This command can only be used in a server.",
+            "dm_only": "This command can only be used in direct messages."
+        },
+        "help": {
+            "title": "Command Help",
+            "description": "List of all available commands and their descriptions.",
+            "category": "Category",
+            "usage": "Usage",
+            "aliases": "Aliases",
+            "cooldown": "Cooldown",
+            "no_commands": "No commands available in this category.",
+            "command_not_found": "Command `{command}` not found.",
+            "command_details": "Information about `{command}`"
+        },
+        "ping": {
+            "title": "Ping",
+            "description": "Ping: {ping} ms\nAPI Latency: {api_latency} ms"
+        },
+        "language": {
+            "title": "Language",
+            "description": "Current language: {language}",
+            "set": "Language changed to {language}",
+            "invalid": "Invalid language. Available languages: {languages}"
+        },
+        "stats": {
+            "title": "Statistics",
+            "description": "Bot and server statistics",
+            "uptime": "Uptime",
+            "servers": "Servers",
+            "users": "Users",
+            "channels": "Channels",
+            "memory": "Memory Usage",
+            "cpu": "CPU Usage",
+            "server_stats": "Server Statistics",
+            "member_count": "Members",
+            "online": "Online",
+            "roles": "Roles",
+            "created_at": "Created At",
+            "server_region": "Region",
+            "verification_level": "Verification Level"
+        },
+        "module": {
+            "title": "Module Management",
+            "description": "Enable/disable bot modules",
+            "list": "Module List",
+            "enabled": "Module {module} enabled",
+            "disabled": "Module {module} disabled",
+            "not_found": "Module {module} not found",
+            "status": "Module {module} status: {status}"
+        }
+    },
+    "moderation": {
+        "ban": {
+            "title": "Ban",
+            "description": "User {user} has been banned",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "duration": "Duration: {duration}",
+            "permanent": "Permanent",
+            "dm_message": "You have been banned from {guild}. Reason: {reason}",
+            "no_permission": "You don't have permission to ban this user!",
+            "cannot_ban": "I cannot ban this user!",
+            "self_ban": "You cannot ban yourself!",
+            "already_banned": "This user is already banned!"
+        },
+        "unban": {
+            "title": "Unban",
+            "description": "User {user} has been unbanned",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "not_banned": "This user is not banned!",
+            "no_permission": "You don't have permission to unban this user!",
+            "cannot_unban": "I cannot unban this user!"
+        },
+        "kick": {
+            "title": "Kick",
+            "description": "User {user} has been kicked",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "dm_message": "You have been kicked from {guild}. Reason: {reason}",
+            "no_permission": "You don't have permission to kick this user!",
+            "cannot_kick": "I cannot kick this user!",
+            "self_kick": "You cannot kick yourself!"
+        },
+        "mute": {
+            "title": "Mute",
+            "description": "User {user} has been muted",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "duration": "Duration: {duration}",
+            "permanent": "Permanent",
+            "dm_message": "You have been muted in {guild}. Reason: {reason}. Duration: {duration}",
+            "no_permission": "You don't have permission to mute this user!",
+            "cannot_mute": "I cannot mute this user!",
+            "self_mute": "You cannot mute yourself!",
+            "already_muted": "This user is already muted!",
+            "role_not_found": "Mute role not found! Use /muterole create to create a mute role."
+        },
+        "unmute": {
+            "title": "Unmute",
+            "description": "User {user} has been unmuted",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "dm_message": "You have been unmuted in {guild}. Reason: {reason}",
+            "no_permission": "You don't have permission to unmute this user!",
+            "cannot_unmute": "I cannot unmute this user!",
+            "not_muted": "This user is not muted!"
+        },
+        "warn": {
+            "title": "Warning",
+            "description": "User {user} has been warned",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "dm_message": "You have been warned in {guild}. Reason: {reason}",
+            "no_permission": "You don't have permission to warn this user!",
+            "cannot_warn": "I cannot warn this user!",
+            "self_warn": "You cannot warn yourself!",
+            "count": "Warning count: {count}"
+        },
+        "unwarn": {
+            "title": "Warning Removal",
+            "description": "Warning removed from user {user}",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "dm_message": "A warning has been removed from you in {guild}. Reason: {reason}",
+            "no_permission": "You don't have permission to remove warnings!",
+            "cannot_unwarn": "I cannot remove warnings from this user!",
+            "no_warns": "This user has no warnings!",
+            "count": "Remaining warning count: {count}"
+        },
+        "clear": {
+            "title": "Message Purge",
+            "description": "Deleted {count} messages",
+            "error": "Failed to delete messages: {error}",
+            "no_permission": "You don't have permission to delete messages!",
+            "too_many": "You can delete a maximum of 100 messages at once!",
+            "too_old": "Messages older than 14 days cannot be bulk deleted!"
+        },
+        "slowmode": {
+            "title": "Slowmode",
+            "description": "Slowmode set to {seconds} seconds",
+            "disabled": "Slowmode disabled",
+            "no_permission": "You don't have permission to change slowmode!",
+            "error": "Failed to set slowmode: {error}"
+        },
+        "lockdown": {
+            "title": "Channel Lockdown",
+            "description": "Channel {channel} has been locked",
+            "reason": "Reason: {reason}",
+            "no_reason": "No reason provided",
+            "duration": "Duration: {duration}",
+            "permanent": "Until manually unlocked",
+            "no_permission": "You don't have permission to lock channels!",
+            "already_locked": "This channel is already locked!",
+            "unlock": "Channel {channel} has been unlocked",
+            "reason_unlock": "Reason: {reason}"
+        },
+        "modlogs": {
+            "title": "Moderation Logs",
+            "description": "Moderation logs for user {user}",
+            "empty": "This user has no moderation log entries",
+            "entry": "#{id} | {action} | {moderator} | {date} | {reason}",
+            "no_permission": "You don't have permission to view moderation logs!"
+        }
+    },
+    "verification": {
+        "captcha": {
+            "title": "Verification",
+            "description": "To gain access to the server, please enter the code from the image.",
+            "success": "Verification successful! Welcome to the server.",
+            "failure": "Incorrect code! Attempt {attempt}/{max_attempts}",
+            "too_many_attempts": "Too many failed attempts! Please try again later.",
+            "timeout": "Verification timed out. Please use /verify to try again.",
+            "already_verified": "You are already verified on this server!",
+            "dm_failed": "I cannot send you a DM. Please allow direct messages and try again."
+        }
+    },
+    "anti_raid": {
+        "triggered": {
+            "title": "Raid Detected!",
+            "description": "Anti-raid system has been activated!\nReason: {reason}",
+            "action": "Action taken: {action}",
+            "lockdown": "Server locked down",
+            "captcha": "Captcha verification enabled for all new members",
+            "notify": "Moderators notified",
+            "disable": "Use /antiraid disable to turn off raid protection"
+        },
+        "disabled": {
+            "title": "Raid Protection Disabled",
+            "description": "Raid protection has been disabled by {user}",
+            "channels_unlocked": "Channels unlocked",
+            "no_permission": "You don't have permission to disable raid protection!"
+        },
+        "settings": {
+            "title": "Raid Protection Settings",
+            "description": "Current raid protection settings",
+            "enabled": "Enabled: {enabled}",
+            "threshold": "Threshold (joins per minute): {threshold}",
+            "action": "Action when triggered: {action}",
+            "min_age": "Minimum account age: {min_age} days",
+            "no_permission": "You don't have permission to view raid protection settings!"
+        }
+    },
+    "auto_mod": {
+        "caps": {
+            "title": "CAPS Detected",
+            "description": "Please don't use too many capital letters.",
+            "message_deleted": "Message deleted due to excessive use of capital letters."
+        },
+        "invite": {
+            "title": "Discord Invite Detected",
+            "description": "Please don't post invites to other servers.",
+            "message_deleted": "Message deleted due to containing a Discord invite."
+        },
+        "spam": {
+            "title": "Spam Detected",
+            "description": "Please don't send messages too quickly.",
+            "user_muted": "User {user} has been automatically muted for spamming."
+        }
+    },
+    "logging": {
+        "message_delete": {
+            "title": "Message Deleted",
+            "description": "Message from {user} was deleted in {channel}",
+            "content": "Content: {content}"
+        },
+        "message_edit": {
+            "title": "Message Edited",
+            "description": "Message from {user} was edited in {channel}",
+            "before": "Before: {content}",
+            "after": "After: {content}"
+        },
+        "member_join": {
+            "title": "Member Joined",
+            "description": "{user} joined the server",
+            "account_age": "Account age: {age}",
+            "member_count": "Members: {count}"
+        },
+        "member_leave": {
+            "title": "Member Left",
+            "description": "{user} left the server",
+            "joined_at": "Joined at: {date}",
+            "roles": "Roles: {roles}",
+            "member_count": "Members: {count}"
+        },
+        "member_ban": {
+            "title": "Member Banned",
+            "description": "{user} was banned",
+            "moderator": "Moderator: {moderator}",
+            "reason": "Reason: {reason}"
+        },
+        "member_unban": {
+            "title": "Member Unbanned",
+            "description": "{user} was unbanned",
+            "moderator": "Moderator: {moderator}",
+            "reason": "Reason: {reason}"
+        }
+    },
+    "music": {
+        "play": {
+            "title": "Playing",
+            "description": "Added to queue: {title}",
+            "duration": "Duration: {duration}",
+            "position": "Position in queue: {position}",
+            "error": "Failed to play track: {error}",
+            "no_results": "No results found for query: {query}",
+            "not_in_voice": "You must be in a voice channel!",
+            "already_playing": "Already playing: {title}"
+        },
+        "queue": {
+            "title": "Playback Queue",
+            "description": "Total tracks: {count}",
+            "now_playing": "Now playing: {title} ({duration})",
+            "empty": "Queue is empty",
+            "page": "Page {page}/{total_pages}"
+        },
+        "skip": {
+            "title": "Track Skipped",
+            "description": "Track {title} skipped",
+            "no_tracks": "No tracks to skip!",
+            "vote": "Vote to skip: {votes}/{required}"
+        },
+        "stop": {
+            "title": "Playback Stopped",
+            "description": "Playback stopped and queue cleared",
+            "not_playing": "Nothing is currently playing!"
+        },
+        "pause": {
+            "title": "Paused",
+            "description": "Playback paused",
+            "already_paused": "Playback is already paused!",
+            "not_playing": "Nothing is currently playing!"
+        },
+        "resume": {
+            "title": "Resumed",
+            "description": "Playback resumed",
+            "not_paused": "Playback is not paused!",
+            "not_playing": "Nothing is currently playing!"
+        },
+        "volume": {
+            "title": "Volume",
+            "description": "Volume set to {volume}%",
+            "not_playing": "Nothing is currently playing!",
+            "invalid": "Volume must be between 0 and 100!"
+        },
+        "playlist": {
+            "title": "Playlist",
+            "description": "Playlist {name} added to queue: {count} tracks",
+            "error": "Failed to load playlist: {error}",
+            "not_found": "Playlist not found: {name}",
+            "list": "Playlist List",
+            "save": "Playlist saved: {name} ({count} tracks)",
+            "delete": "Playlist deleted: {name}"
+        }
+    },
+    "utility": {
+        "weather": {
+            "title": "Weather in {location}",
+            "description": "Current weather: {condition}",
+            "temperature": "Temperature: {temp}°C",
+            "feels_like": "Feels like: {feels_like}°C",
+            "humidity": "Humidity: {humidity}%",
+            "wind": "Wind: {wind} m/s",
+            "pressure": "Pressure: {pressure} hPa",
+            "not_found": "Location not found: {location}",
+            "error": "Failed to get weather data: {error}"
+        },
+        "translate": {
+            "title": "Translation",
+            "description": "Translation from {source} to {target}",
+            "original": "Original: {text}",
+            "translated": "Translated: {text}",
+            "error": "Failed to translate: {error}",
+            "detect": "Detected language: {language}"
+        },
+        "poll": {
+            "title": "{question}",
+            "description": "Vote using the reactions below:",
+            "option": "{emoji} - {option}",
+            "results": "Poll Results",
+            "total_votes": "Total votes: {count}",
+            "option_result": "{emoji} {option}: {count} votes ({percentage}%)",
+            "ended": "Poll has ended!"
+        },
+        "reminder": {
+            "title": "Reminder Set",
+            "description": "I'll remind you in {time}",
+            "message": "Message: {message}",
+            "reminder": "Reminder for {user}",
+            "error": "Failed to set reminder: {error}",
+            "invalid_time": "Invalid time format!"
+        }
+    },
+    "fun": {
+        "meme": {
+            "title": "Meme",
+            "error": "Failed to get meme: {error}",
+            "nsfw": "Meme is marked as NSFW and cannot be displayed in this channel."
+        },
+        "8ball": {
+            "title": "Magic 8-Ball",
+            "description": "Question: {question}",
+            "answer": "Answer: {answer}",
+            "answers": [
+                "It is certain.",
+                "It is decidedly so.",
+                "Without a doubt.",
+                "Yes definitely.",
+                "You may rely on it.",
+                "As I see it, yes.",
+                "Most likely.",
+                "Outlook good.",
+                "Yes.",
+                "Signs point to yes.",
+                "Reply hazy, try again.",
+                "Ask again later.",
+                "Better not tell you now.",
+                "Cannot predict now.",
+                "Concentrate and ask again.",
+                "Don't count on it.",
+                "My reply is no.",
+                "My sources say no.",
+                "Outlook not so good.",
+                "Very doubtful."
+            ]
+        },
+        "dice": {
+            "title": "Dice Roll",
+            "description": "{user} rolls {dice}d{sides}",
+            "result": "Result: {result}",
+            "rolls": "Rolls: {rolls}"
+        },
+        "coinflip": {
+            "title": "Coin Flip",
+            "description": "{user} flips a coin...",
+            "result": "Result: {result}",
+            "heads": "Heads",
+            "tails": "Tails"
+        }
+    },
+    "ai": {
+        "ask": {
+            "title": "AI Response",
+            "thinking": "Thinking...",
+            "error": "Failed to get AI response: {error}",
+            "rate_limit": "AI request rate limit reached. Please try again later."
+        }
+    }
+}

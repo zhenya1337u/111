@@ -1,0 +1,422 @@
+{
+    "bot": {
+        "ready": "Bot ist bereit!",
+        "reconnect": "Verbindung wird wiederhergestellt...",
+        "disconnect": "Bot wurde getrennt",
+        "error": "Ein Fehler ist aufgetreten: {error}"
+    },
+    "commands": {
+        "common": {
+            "error": "Bei der Ausführung des Befehls ist ein Fehler aufgetreten!",
+            "not_found": "Befehl nicht gefunden!",
+            "no_permission": "Du hast keine Berechtigung für diesen Befehl!",
+            "cooldown": "Bitte warte {time} Sekunden, bevor du diesen Befehl erneut verwendest.",
+            "guild_only": "Dieser Befehl kann nur auf einem Server verwendet werden.",
+            "dm_only": "Dieser Befehl kann nur in Direktnachrichten verwendet werden."
+        },
+        "help": {
+            "title": "Befehlshilfe",
+            "description": "Liste aller verfügbaren Befehle und deren Beschreibungen.",
+            "category": "Kategorie",
+            "usage": "Verwendung",
+            "aliases": "Alternativen",
+            "cooldown": "Abklingzeit",
+            "no_commands": "Keine Befehle in dieser Kategorie verfügbar.",
+            "command_not_found": "Befehl `{command}` nicht gefunden.",
+            "command_details": "Informationen über `{command}`"
+        },
+        "ping": {
+            "title": "Ping",
+            "description": "Ping: {ping} ms\nAPI-Latenz: {api_latency} ms"
+        },
+        "language": {
+            "title": "Sprache",
+            "description": "Aktuelle Sprache: {language}",
+            "set": "Sprache zu {language} geändert",
+            "invalid": "Ungültige Sprache. Verfügbare Sprachen: {languages}"
+        },
+        "stats": {
+            "title": "Statistiken",
+            "description": "Bot- und Serverstatistiken",
+            "uptime": "Laufzeit",
+            "servers": "Server",
+            "users": "Benutzer",
+            "channels": "Kanäle",
+            "memory": "Speichernutzung",
+            "cpu": "CPU-Nutzung",
+            "server_stats": "Serverstatistiken",
+            "member_count": "Mitglieder",
+            "online": "Online",
+            "roles": "Rollen",
+            "created_at": "Erstellt am",
+            "server_region": "Region",
+            "verification_level": "Verifizierungsstufe"
+        },
+        "module": {
+            "title": "Modulverwaltung",
+            "description": "Bot-Module aktivieren/deaktivieren",
+            "list": "Modulliste",
+            "enabled": "Modul {module} aktiviert",
+            "disabled": "Modul {module} deaktiviert",
+            "not_found": "Modul {module} nicht gefunden",
+            "status": "Status des Moduls {module}: {status}"
+        }
+    },
+    "moderation": {
+        "ban": {
+            "title": "Bann",
+            "description": "Benutzer {user} wurde gebannt",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "duration": "Dauer: {duration}",
+            "permanent": "Permanent",
+            "dm_message": "Du wurdest von {guild} gebannt. Grund: {reason}",
+            "no_permission": "Du hast keine Berechtigung, diesen Benutzer zu bannen!",
+            "cannot_ban": "Ich kann diesen Benutzer nicht bannen!",
+            "self_ban": "Du kannst dich nicht selbst bannen!",
+            "already_banned": "Dieser Benutzer ist bereits gebannt!"
+        },
+        "unban": {
+            "title": "Bann aufheben",
+            "description": "Bann für Benutzer {user} wurde aufgehoben",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "not_banned": "Dieser Benutzer ist nicht gebannt!",
+            "no_permission": "Du hast keine Berechtigung, den Bann dieses Benutzers aufzuheben!",
+            "cannot_unban": "Ich kann den Bann dieses Benutzers nicht aufheben!"
+        },
+        "kick": {
+            "title": "Kick",
+            "description": "Benutzer {user} wurde gekickt",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "dm_message": "Du wurdest von {guild} gekickt. Grund: {reason}",
+            "no_permission": "Du hast keine Berechtigung, diesen Benutzer zu kicken!",
+            "cannot_kick": "Ich kann diesen Benutzer nicht kicken!",
+            "self_kick": "Du kannst dich nicht selbst kicken!"
+        },
+        "mute": {
+            "title": "Stummschaltung",
+            "description": "Benutzer {user} wurde stummgeschaltet",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "duration": "Dauer: {duration}",
+            "permanent": "Permanent",
+            "dm_message": "Du wurdest in {guild} stummgeschaltet. Grund: {reason}. Dauer: {duration}",
+            "no_permission": "Du hast keine Berechtigung, diesen Benutzer stummzuschalten!",
+            "cannot_mute": "Ich kann diesen Benutzer nicht stummschalten!",
+            "self_mute": "Du kannst dich nicht selbst stummschalten!",
+            "already_muted": "Dieser Benutzer ist bereits stummgeschaltet!",
+            "role_not_found": "Stummschaltungsrolle nicht gefunden! Verwende /muterole create, um eine Stummschaltungsrolle zu erstellen."
+        },
+        "unmute": {
+            "title": "Stummschaltung aufheben",
+            "description": "Stummschaltung für Benutzer {user} wurde aufgehoben",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "dm_message": "Deine Stummschaltung in {guild} wurde aufgehoben. Grund: {reason}",
+            "no_permission": "Du hast keine Berechtigung, die Stummschaltung dieses Benutzers aufzuheben!",
+            "cannot_unmute": "Ich kann die Stummschaltung dieses Benutzers nicht aufheben!",
+            "not_muted": "Dieser Benutzer ist nicht stummgeschaltet!"
+        },
+        "warn": {
+            "title": "Verwarnung",
+            "description": "Benutzer {user} wurde verwarnt",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "dm_message": "Du wurdest in {guild} verwarnt. Grund: {reason}",
+            "no_permission": "Du hast keine Berechtigung, diesen Benutzer zu verwarnen!",
+            "cannot_warn": "Ich kann diesen Benutzer nicht verwarnen!",
+            "self_warn": "Du kannst dich nicht selbst verwarnen!",
+            "count": "Verwarnungsanzahl: {count}"
+        },
+        "unwarn": {
+            "title": "Verwarnung entfernen",
+            "description": "Verwarnung von Benutzer {user} wurde entfernt",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "dm_message": "Eine Verwarnung von dir in {guild} wurde entfernt. Grund: {reason}",
+            "no_permission": "Du hast keine Berechtigung, Verwarnungen zu entfernen!",
+            "cannot_unwarn": "Ich kann Verwarnungen von diesem Benutzer nicht entfernen!",
+            "no_warns": "Dieser Benutzer hat keine Verwarnungen!",
+            "count": "Verbleibende Verwarnungsanzahl: {count}"
+        },
+        "clear": {
+            "title": "Nachrichten löschen",
+            "description": "{count} Nachrichten gelöscht",
+            "error": "Fehler beim Löschen der Nachrichten: {error}",
+            "no_permission": "Du hast keine Berechtigung zum Löschen von Nachrichten!",
+            "too_many": "Du kannst maximal 100 Nachrichten auf einmal löschen!",
+            "too_old": "Nachrichten, die älter als 14 Tage sind, können nicht massenhaft gelöscht werden!"
+        },
+        "slowmode": {
+            "title": "Langsammodus",
+            "description": "Langsammodus auf {seconds} Sekunden eingestellt",
+            "disabled": "Langsammodus deaktiviert",
+            "no_permission": "Du hast keine Berechtigung, den Langsammodus zu ändern!",
+            "error": "Fehler beim Einstellen des Langsammodus: {error}"
+        },
+        "lockdown": {
+            "title": "Kanalsperre",
+            "description": "Kanal {channel} wurde gesperrt",
+            "reason": "Grund: {reason}",
+            "no_reason": "Kein Grund angegeben",
+            "duration": "Dauer: {duration}",
+            "permanent": "Bis zur manuellen Entsperrung",
+            "no_permission": "Du hast keine Berechtigung, Kanäle zu sperren!",
+            "already_locked": "Dieser Kanal ist bereits gesperrt!",
+            "unlock": "Kanal {channel} wurde entsperrt",
+            "reason_unlock": "Grund: {reason}"
+        },
+        "modlogs": {
+            "title": "Moderationslogs",
+            "description": "Moderationslogs für Benutzer {user}",
+            "empty": "Dieser Benutzer hat keine Moderationslogeinträge",
+            "entry": "#{id} | {action} | {moderator} | {date} | {reason}",
+            "no_permission": "Du hast keine Berechtigung, Moderationslogs anzusehen!"
+        }
+    },
+    "verification": {
+        "captcha": {
+            "title": "Verifizierung",
+            "description": "Um Zugang zum Server zu erhalten, gib bitte den Code vom Bild ein.",
+            "success": "Verifizierung erfolgreich! Willkommen auf dem Server.",
+            "failure": "Falscher Code! Versuch {attempt}/{max_attempts}",
+            "too_many_attempts": "Zu viele fehlgeschlagene Versuche! Bitte versuche es später erneut.",
+            "timeout": "Verifizierung abgelaufen. Bitte verwende /verify, um es erneut zu versuchen.",
+            "already_verified": "Du bist bereits auf diesem Server verifiziert!",
+            "dm_failed": "Ich kann dir keine Direktnachricht senden. Bitte erlaube Direktnachrichten und versuche es erneut."
+        }
+    },
+    "anti_raid": {
+        "triggered": {
+            "title": "Raid erkannt!",
+            "description": "Anti-Raid-System wurde aktiviert!\nGrund: {reason}",
+            "action": "Ausgeführte Aktion: {action}",
+            "lockdown": "Server gesperrt",
+            "captcha": "Captcha-Verifizierung für alle neuen Mitglieder aktiviert",
+            "notify": "Moderatoren benachrichtigt",
+            "disable": "Verwende /antiraid disable, um den Raidschutz zu deaktivieren"
+        },
+        "disabled": {
+            "title": "Raidschutz deaktiviert",
+            "description": "Raidschutz wurde von {user} deaktiviert",
+            "channels_unlocked": "Kanäle entsperrt",
+            "no_permission": "Du hast keine Berechtigung, den Raidschutz zu deaktivieren!"
+        },
+        "settings": {
+            "title": "Raidschutz-Einstellungen",
+            "description": "Aktuelle Raidschutz-Einstellungen",
+            "enabled": "Aktiviert: {enabled}",
+            "threshold": "Schwellenwert (Beitritte pro Minute): {threshold}",
+            "action": "Aktion bei Auslösung: {action}",
+            "min_age": "Mindestalter des Kontos: {min_age} Tage",
+            "no_permission": "Du hast keine Berechtigung, Raidschutz-Einstellungen anzusehen!"
+        }
+    },
+    "auto_mod": {
+        "caps": {
+            "title": "GROßBUCHSTABEN erkannt",
+            "description": "Bitte verwende nicht zu viele Großbuchstaben.",
+            "message_deleted": "Nachricht aufgrund übermäßiger Verwendung von Großbuchstaben gelöscht."
+        },
+        "invite": {
+            "title": "Discord-Einladung erkannt",
+            "description": "Bitte poste keine Einladungen zu anderen Servern.",
+            "message_deleted": "Nachricht aufgrund einer Discord-Einladung gelöscht."
+        },
+        "spam": {
+            "title": "Spam erkannt",
+            "description": "Bitte sende nicht zu schnell Nachrichten.",
+            "user_muted": "Benutzer {user} wurde automatisch wegen Spam stummgeschaltet."
+        }
+    },
+    "logging": {
+        "message_delete": {
+            "title": "Nachricht gelöscht",
+            "description": "Nachricht von {user} wurde in {channel} gelöscht",
+            "content": "Inhalt: {content}"
+        },
+        "message_edit": {
+            "title": "Nachricht bearbeitet",
+            "description": "Nachricht von {user} wurde in {channel} bearbeitet",
+            "before": "Vorher: {content}",
+            "after": "Nachher: {content}"
+        },
+        "member_join": {
+            "title": "Mitglied beigetreten",
+            "description": "{user} ist dem Server beigetreten",
+            "account_age": "Kontoalter: {age}",
+            "member_count": "Mitglieder: {count}"
+        },
+        "member_leave": {
+            "title": "Mitglied verlassen",
+            "description": "{user} hat den Server verlassen",
+            "joined_at": "Beigetreten: {date}",
+            "roles": "Rollen: {roles}",
+            "member_count": "Mitglieder: {count}"
+        },
+        "member_ban": {
+            "title": "Mitglied gebannt",
+            "description": "{user} wurde gebannt",
+            "moderator": "Moderator: {moderator}",
+            "reason": "Grund: {reason}"
+        },
+        "member_unban": {
+            "title": "Bann für Mitglied aufgehoben",
+            "description": "Bann für {user} wurde aufgehoben",
+            "moderator": "Moderator: {moderator}",
+            "reason": "Grund: {reason}"
+        }
+    },
+    "music": {
+        "play": {
+            "title": "Wiedergabe",
+            "description": "Zur Warteschlange hinzugefügt: {title}",
+            "duration": "Dauer: {duration}",
+            "position": "Position in der Warteschlange: {position}",
+            "error": "Fehler beim Abspielen des Tracks: {error}",
+            "no_results": "Keine Ergebnisse für die Anfrage gefunden: {query}",
+            "not_in_voice": "Du musst in einem Sprachkanal sein!",
+            "already_playing": "Spielt bereits: {title}"
+        },
+        "queue": {
+            "title": "Wiedergabewarteschlange",
+            "description": "Gesamtzahl der Tracks: {count}",
+            "now_playing": "Aktuell: {title} ({duration})",
+            "empty": "Warteschlange ist leer",
+            "page": "Seite {page}/{total_pages}"
+        },
+        "skip": {
+            "title": "Track übersprungen",
+            "description": "Track {title} übersprungen",
+            "no_tracks": "Keine Tracks zum Überspringen!",
+            "vote": "Abstimmung zum Überspringen: {votes}/{required}"
+        },
+        "stop": {
+            "title": "Wiedergabe gestoppt",
+            "description": "Wiedergabe gestoppt und Warteschlange geleert",
+            "not_playing": "Es wird derzeit nichts abgespielt!"
+        },
+        "pause": {
+            "title": "Pausiert",
+            "description": "Wiedergabe pausiert",
+            "already_paused": "Wiedergabe ist bereits pausiert!",
+            "not_playing": "Es wird derzeit nichts abgespielt!"
+        },
+        "resume": {
+            "title": "Fortgesetzt",
+            "description": "Wiedergabe fortgesetzt",
+            "not_paused": "Wiedergabe ist nicht pausiert!",
+            "not_playing": "Es wird derzeit nichts abgespielt!"
+        },
+        "volume": {
+            "title": "Lautstärke",
+            "description": "Lautstärke auf {volume}% eingestellt",
+            "not_playing": "Es wird derzeit nichts abgespielt!",
+            "invalid": "Lautstärke muss zwischen 0 und 100 liegen!"
+        },
+        "playlist": {
+            "title": "Playlist",
+            "description": "Playlist {name} zur Warteschlange hinzugefügt: {count} Tracks",
+            "error": "Fehler beim Laden der Playlist: {error}",
+            "not_found": "Playlist nicht gefunden: {name}",
+            "list": "Playlisten-Liste",
+            "save": "Playlist gespeichert: {name} ({count} Tracks)",
+            "delete": "Playlist gelöscht: {name}"
+        }
+    },
+    "utility": {
+        "weather": {
+            "title": "Wetter in {location}",
+            "description": "Aktuelles Wetter: {condition}",
+            "temperature": "Temperatur: {temp}°C",
+            "feels_like": "Gefühlt wie: {feels_like}°C",
+            "humidity": "Luftfeuchtigkeit: {humidity}%",
+            "wind": "Wind: {wind} m/s",
+            "pressure": "Luftdruck: {pressure} hPa",
+            "not_found": "Ort nicht gefunden: {location}",
+            "error": "Fehler beim Abrufen der Wetterdaten: {error}"
+        },
+        "translate": {
+            "title": "Übersetzung",
+            "description": "Übersetzung von {source} nach {target}",
+            "original": "Original: {text}",
+            "translated": "Übersetzt: {text}",
+            "error": "Fehler bei der Übersetzung: {error}",
+            "detect": "Erkannte Sprache: {language}"
+        },
+        "poll": {
+            "title": "{question}",
+            "description": "Stimme mit den Reaktionen unten ab:",
+            "option": "{emoji} - {option}",
+            "results": "Umfrageergebnisse",
+            "total_votes": "Gesamtstimmen: {count}",
+            "option_result": "{emoji} {option}: {count} Stimmen ({percentage}%)",
+            "ended": "Umfrage beendet!"
+        },
+        "reminder": {
+            "title": "Erinnerung gesetzt",
+            "description": "Ich erinnere dich in {time}",
+            "message": "Nachricht: {message}",
+            "reminder": "Erinnerung für {user}",
+            "error": "Fehler beim Setzen der Erinnerung: {error}",
+            "invalid_time": "Ungültiges Zeitformat!"
+        }
+    },
+    "fun": {
+        "meme": {
+            "title": "Meme",
+            "error": "Fehler beim Abrufen des Memes: {error}",
+            "nsfw": "Meme ist als NSFW markiert und kann in diesem Kanal nicht angezeigt werden."
+        },
+        "8ball": {
+            "title": "Magische 8-Ball",
+            "description": "Frage: {question}",
+            "answer": "Antwort: {answer}",
+            "answers": [
+                "Auf jeden Fall.",
+                "Es ist entschieden so.",
+                "Ohne Zweifel.",
+                "Ja, definitiv.",
+                "Du kannst dich darauf verlassen.",
+                "Wie ich es sehe, ja.",
+                "Höchstwahrscheinlich.",
+                "Aussichten gut.",
+                "Ja.",
+                "Alle Anzeichen deuten auf Ja.",
+                "Antwort unklar, versuche es erneut.",
+                "Frag später noch einmal.",
+                "Besser, ich sage es dir jetzt nicht.",
+                "Kann jetzt nicht vorhersagen.",
+                "Konzentriere dich und frage erneut.",
+                "Verlasse dich nicht darauf.",
+                "Meine Antwort ist nein.",
+                "Meine Quellen sagen nein.",
+                "Aussichten nicht so gut.",
+                "Sehr zweifelhaft."
+            ]
+        },
+        "dice": {
+            "title": "Würfelwurf",
+            "description": "{user} würfelt {dice}d{sides}",
+            "result": "Ergebnis: {result}",
+            "rolls": "Würfe: {rolls}"
+        },
+        "coinflip": {
+            "title": "Münzwurf",
+            "description": "{user} wirft eine Münze...",
+            "result": "Ergebnis: {result}",
+            "heads": "Kopf",
+            "tails": "Zahl"
+        }
+    },
+    "ai": {
+        "ask": {
+            "title": "KI-Antwort",
+            "thinking": "Denke nach...",
+            "error": "Fehler beim Abrufen der KI-Antwort: {error}",
+            "rate_limit": "KI-Anfrage-Ratenlimit erreicht. Bitte versuche es später erneut."
+        }
+    }
+}
