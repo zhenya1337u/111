@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ping Pong Game</h1>
+    
+    <div class="scoreboard"> 
+        <div>Player 1: <span id="player1Score">0</span></div>
+        <div>Player 2: <span id="player2Score">0</span></div>
+    </div>
+    
+    <canvas id="gameCanvas" width="800" height="400" style="border:1px solid #000;"></canvas>
+    
+    <div class="controls">
+        <button id="startButton">Start Game</button>
+        <button id="resetButton">Reset Game</button>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

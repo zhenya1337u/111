@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray */
+    margin: 0;
+    padding-top: 20px;
+}
+
+#gameCanvas {
+    border: 1px solid black; /* Already set inline, but good to have here */
+    background-color: #000; /* Black background for canvas */
+    margin-bottom: 20px; /* Space below canvas */
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 800px; /* Same as canvas width */
+    margin-bottom: 20px; /* Space below scoreboard */
+}
+
+.scoreboard div { /* Styling for the divs containing "Player X: score" */
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px;
+}
+
+#player1Score, #player2Score {
+    font-weight: bold;
+}
+
+.controls { /* A class for the div containing buttons, from index.html */
+    margin-bottom: 20px;
+}
+
+#startButton, #resetButton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff; /* Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover, #resetButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
